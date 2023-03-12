@@ -1,0 +1,17 @@
+.post_down {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1.8rem;
+  gap: 1.1rem;
+}
+
+.post_down > span,
+.post_down > div > span {
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  background-color: var(--light_grayish_cyan);
+  color: var(--dark_cyan);
+  padding: .5rem .6rem;
+  border-radius: .2rem;
+}

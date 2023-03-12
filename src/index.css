@@ -2,20 +2,28 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-  --dark_cyan: hsl(180, 29%, 50%);
-  --light_gray_cyan: hsl(180, 52%, 96%); /*background*/
-  --light_grayish_cyan: hsl(180, 31%, 95%); /*filter tablets*/
-  --dark_grayish_cyan: hsl(180, 8%, 52%); /*text*/
-  --very_dark_grayish_cyan: hsl(180, 14%, 20%); /*title*/
+	--dark_cyan: hsl(180, 29%, 50%);
+	--shadow_cyan: hsla(180, 29%, 50%, 0.2);
+	--light_gray_cyan: hsl(180, 52%, 96%); /*background*/
+	--light_grayish_cyan: hsl(180, 31%, 95%); /*filter tablets*/
+	--light_gray_border: hsl(0, 4%, 79%);
+	--dark_grayish_cyan: hsl(180, 8%, 52%); /*text*/
+	--very_dark_grayish_cyan: hsl(180, 14%, 20%); /*title*/
 }
 
 html {
-  font-size: 15px;
-  font-family: 'League Spartan', sans-serif;
+	font-size: 15px;
+	font-family: 'League Spartan', sans-serif;
+}
+
+main {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--light_gray_cyan);
 }

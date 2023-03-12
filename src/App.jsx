@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useState } from 'react';
+import Header from './components/header/Header';
+import Posts from './components/posts/Posts';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      
-    </div>
-  )
+	return (
+		<main>
+			<Header />
+			<Posts />
+		</main>
+	);
 }
 
-export default App
+export default App;

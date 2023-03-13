@@ -1,29 +1,55 @@
 .post_container {
-  position: relative;
-  width: 21.8rem;
-  height: 17.1rem;
-  background-color: white;
-  padding: 2.25rem 1.25rem 1.2rem;
-  border-radius: .333rem;
-  border-left: .34rem solid white;
-  box-shadow: 0 .4rem .667rem var(--shadow_cyan);
+	position: relative;
+	width: 21.8rem;
+	height: 17.1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 2.25rem 1.25rem 1.2rem;
+	border-radius: 0.333rem;
+	border-left: 0.34rem solid white;
+	box-shadow: 0 0.4rem 0.667rem var(--shadow_cyan);
 }
 /*If data is featured*/
 .featured {
-  border-left: .34rem solid var(--dark_cyan);
+	border-left: 0.34rem solid var(--dark_cyan);
 }
 
 .post_img_container {
-  position: absolute;
-  top: -1.6rem;
-  left: 1.267rem;
+	position: absolute;
+	top: -1.6rem;
+	left: 1.267rem;
 }
 
 .post_img_container > img {
-  width: 3.2rem;
+	width: 3.2rem;
 }
 
 .post_up,
 .post_down {
-  height: 50%;
+	height: 50%;
+}
+
+@media screen and (min-width: 769px) {
+	.post_container {
+		width: 77.1%;
+		height: 10.1rem;
+		flex-direction: row;
+		align-items: center;
+		padding: 1rem 2.15rem;
+	}
+
+	.post_img_container {
+		position: static;
+		padding: 0 0.2rem;
+	}
+
+	.post_img_container > img {
+		width: 5.85rem;
+	}
+
+	.post_up,
+	.post_down {
+		height: auto;
+	}
 }

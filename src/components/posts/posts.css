@@ -2,6 +2,13 @@ article {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 3.7rem;
+	padding: 3.7rem 0;
 	gap: 2.65rem;
+}
+
+@media screen and (min-width: 769px) {
+	article {
+		padding: 5rem 0;
+		gap: 1.65rem;
+	}
 }

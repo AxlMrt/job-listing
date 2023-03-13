@@ -1,8 +1,8 @@
-import React from 'react'
-import './postUp.css'
+import React from 'react';
+import './postUp.css';
 
 export default function postUp({ post }) {
-  return (
+	return (
 		<section className='post_up'>
 			<div className='post_company'>
 				<h1>{post.company}</h1>

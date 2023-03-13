@@ -3,21 +3,7 @@ import './single.css';
 import PostUp from './postUp/postUp';
 import PostDown from './postDown/PostDown';
 
-export default function Single({ post }) {
-	const filter = (e) => {
-		const value = e.target.textContent;
-		console.log(value)
-		const posts = document.querySelectorAll('.post_container');
-		posts.forEach((post) => {
-			if (post.textContent.includes(value)) {
-				console.log(post.textContent)
-				post.style.display = 'block';
-			} else {
-				post.style.display = 'none';
-			}
-		});
-	};
-
+export default function Single({ post, addRole }) {
 	return (
 		<div
 			className={post.featured ? 'post_container featured' : 'post_container'}
@@ -26,7 +12,7 @@ export default function Single({ post }) {
 				<img src={post.logo} alt={post.title} />
 			</div>
 			<PostUp post={post} />
-			<PostDown post={post} filter={filter} />
+			<PostDown post={post} addRole={addRole} />
 		</div>
 	);
 }

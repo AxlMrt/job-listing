@@ -1,0 +1,79 @@
+.filter_container {
+	display: flex;
+	justify-content: center;
+}
+
+.post_filter_container {
+	width: 21.8rem;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	box-shadow: 0 0.4rem 0.667rem var(--shadow_cyan);
+	padding: 1.25rem 1.3rem;
+	margin-top: -2.35rem;
+	border-radius: 0.333rem;
+}
+
+.post_filter {
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.1rem;
+}
+
+.post_role_container {
+	margin: 0.65rem 0;
+}
+
+.post_role_container > .filter {
+	padding: 0.6rem 0.5rem;
+	border-top-left-radius: 0.3rem;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0.3rem;
+	border-bottom-right-radius: 0;
+	cursor: text;
+}
+
+.post_role_container > .remove_role {
+	height: 100%;
+	color: white;
+	background-color: var(--dark_cyan);
+	padding: 0.6rem 0.7rem;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	cursor: pointer;
+}
+
+.post_clear {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	cursor: pointer;
+}
+
+.post_clear > span {
+	color: var(--dark_grayish_cyan);
+	font-size: 1.05rem;
+	font-weight: 700;
+}
+
+@media screen and (min-width: 769px) {
+	.post_filter_container {
+		width: 77.1%;
+		padding: 1.25rem 0.4rem;
+		margin-bottom: -2.35rem;
+	}
+
+	.post_filter {
+		gap: 1.25rem;
+	}
+
+	.remove_role:hover {
+		background-color: black;
+	}
+
+	.post_clear > span:hover {
+		color: var(--dark_cyan);
+		text-decoration: underline;
+	}
+}

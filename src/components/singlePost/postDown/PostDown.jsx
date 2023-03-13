@@ -1,19 +1,25 @@
-import React from 'react'
-import './postDown.css'
+import React from 'react';
+import './postDown.css';
 
-export default function PostDown({ post, filter }) {
-  return (
+export default function PostDown({ post, addRole }) {
+	return (
 		<section className='post_down'>
 			<div>
-				<span onClick={filter}>{post.role}</span>
+				<span className='post_role' onClick={addRole}>
+					{post.role}
+				</span>
 			</div>
 			<div>
-				<span onClick={filter}>{post.level}</span>
+				<span className='post_role' onClick={addRole}>
+					{post.level}
+				</span>
 			</div>
 			{post.languages.map((language) => {
 				return (
 					<div key={language}>
-						<span onClick={filter}>{language}</span>
+						<span className='post_role' onClick={addRole}>
+							{language}
+						</span>
 					</div>
 				);
 			})}
@@ -21,7 +27,9 @@ export default function PostDown({ post, filter }) {
 			{post.tools.map((tool) => {
 				return (
 					<div key={tool}>
-						<span onClick={filter}>{tool}</span>
+						<span className='post_role' onClick={addRole}>
+							{tool}
+						</span>
 					</div>
 				);
 			})}

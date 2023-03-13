@@ -1,61 +1,112 @@
 .post_up {
-  border-bottom: 1px solid var(--light_gray_border);
+	border-bottom: 1px solid var(--light_gray_border);
+}
+
+.post_company,
+.post_details,
+.post_position {
+	height: 25%;
 }
 
 .post_company {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .post_company > h1 {
-  font-size: 1rem;
-  color: var(--dark_cyan);
+	font-size: 1rem;
+	color: var(--dark_cyan);
 }
 
 .company_new,
 .company_featured {
-  font-size: .9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
-  padding: .36rem .6rem;
-  border-radius: .7rem;
+	font-size: 0.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	padding: 0.36rem 0.6rem;
+	border-radius: 0.7rem;
 }
 
 .company_new {
-  background-color: var(--dark_cyan);
-  margin-left: 1.5rem;
+	background-color: var(--dark_cyan);
+	margin-left: 1.5rem;
 }
 
 .company_featured {
-  background-color: black;
-  margin-left: .55rem;
+	background-color: black;
+	margin-left: 0.55rem;
 }
 
 .post_position {
-  font-size: .668rem;
-  font-weight: 700;
-  color: var(--very_dark_grayish_cyan);
-  margin-top: .8rem;
+	font-size: 0.668rem;
+	font-weight: 700;
+	color: var(--very_dark_grayish_cyan);
+	margin-top: 0.8rem;
 }
 
 .post_details {
-  height: 50%;
-  display: inline-flex;
-  align-items: center;
+	display: inline-flex;
+	align-items: center;
 }
 
 .post_details > li {
-  font-size: 1.1rem;
-  color: var(--dark_grayish_cyan);
-  margin-right: 1.55rem;
+	font-size: 1.1rem;
+	color: var(--dark_grayish_cyan);
+	margin-right: 1.55rem;
 }
 
 .post_details > li:first-of-type {
-  list-style: none;
+	list-style: none;
 }
 
 .post_details > li:last-of-type > span {
-  position: relative;
-  left: -3px
+	position: relative;
+	left: -3px;
+}
+
+@media screen and (min-width: 769px) {
+	.post_up {
+		width: 50%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		border-bottom: none;
+		padding: 0.5rem 0;
+		margin-left: 1.38rem;
+	}
+
+	.post_company > h1 {
+		font-size: 1.2rem;
+	}
+
+	.post_position {
+		width: 30ch;
+		font-size: 0.98rem;
+	}
+
+	.post_position:hover {
+		color: var(--dark_cyan);
+		cursor: pointer;
+	}
+
+	.company_new {
+		margin-left: 1.1rem;
+	}
+
+	.post_details > li {
+		font-size: 1.2rem;
+		margin-right: 2.25rem;
+	}
+
+	.post_details > li:nth-of-type(2) > span {
+		position: relative;
+		left: 8px;
+		margin-right: 0.55rem;
+	}
+
+	.post_details > li:last-of-type > span {
+		left: 8px;
+	}
 }

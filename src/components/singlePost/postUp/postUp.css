@@ -77,6 +77,10 @@
 		margin-left: 1.38rem;
 	}
 
+	.post_company {
+		margin-top: .2rem;
+	}
+
 	.post_company > h1 {
 		font-size: 1.2rem;
 	}

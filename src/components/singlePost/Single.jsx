@@ -9,7 +9,7 @@ export default function Single({ post, addRole }) {
 			className={post.featured ? 'post_container featured' : 'post_container'}
 		>
 			<div className='post_img_container'>
-				<img src={post.logo} alt={post.title} />
+				<img src={post.logo} alt={post.company} />
 			</div>
 			<PostUp post={post} />
 			<PostDown post={post} addRole={addRole} />
